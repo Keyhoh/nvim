@@ -1,5 +1,3 @@
-nnoremap == gg=G
-
 "coc
 
 " use <tab> for trigger completion and navigate to next complete item
