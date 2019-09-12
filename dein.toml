@@ -14,3 +14,6 @@ repo='Shougo/neco-syntax'
 [[plugins]]
 repo='neoclide/coc.nvim'
 build='./install.cmd nightly'
+
+[[plugins]]
+repo='simeji/winresizer'
