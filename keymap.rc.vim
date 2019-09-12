@@ -1,3 +1,5 @@
+tnoremap <C-[> <C-\><C-n>
+
 "coc
 
 " use <tab> for trigger completion and navigate to next complete item
