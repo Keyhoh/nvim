@@ -16,4 +16,5 @@ repo='neoclide/coc.nvim'
 build='./install.cmd nightly'
 
 [[plugins]]
-repo='simeji/winresizer'
+repo='easymotion/vim-easymotion'
+
