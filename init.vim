@@ -1,4 +1,8 @@
-let g:python3_host_prog=expand('C:/Python37/python.exe')
+if has('win32')
+    let g:python3_host_prog=expand('C:/Python37/python.exe')
+else
+    let g:python3_host_prog=substitute(system('which python3'),'\n','','')
+endif
 
 let s:cache_home=empty($XDG_CACHE_HOME)?expand('~/.cache'):$XDG_CACHE_HOME
 let s:dein_dir=s:cache_home.'/dein'
