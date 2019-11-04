@@ -13,7 +13,7 @@ repo='Shougo/neco-syntax'
 
 [[plugins]]
 repo='neoclide/coc.nvim'
-build='./install.cmd nightly'
+rev='release'
 
 [[plugins]]
 repo='easymotion/vim-easymotion'
