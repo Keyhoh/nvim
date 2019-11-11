@@ -18,8 +18,6 @@ let s:toml_file=fnamemodify(expand('<sfile>'),':h').expand('/dein.toml')
 if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
     call dein#load_toml(s:toml_file)
-    call dein#add('Shougo/deoplete.nvim')
-    call dein#add('cohama/lexima.vim')
     call dein#end()
     call dein#save_state()
 endif
@@ -34,4 +32,3 @@ syntax enable
 runtime! options.rc.vim
 runtime! keymap.rc.vim
 runtime! filetype.rc.vim
-
