@@ -2,7 +2,14 @@ let mapleader="\<Space>"
 
 nnoremap <S-y> y$
 inoremap jj <Esc>
-tnoremap <C-[> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n>
+tnoremap jj <C-\><C-n>
+tnoremap qq exit<CR>
+
+nnoremap <Leader>qq :q!<CR>
+nnoremap <Leader>ww :w<CR>
+nnoremap <Leader>wq :wq<CR>
+nnoremap <Leader>t :terminal<CR>
 
 "coc
 
