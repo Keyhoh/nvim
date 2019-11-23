@@ -9,7 +9,15 @@ tnoremap qq exit<CR>
 nnoremap <Leader>qq :q!<CR>
 nnoremap <Leader>ww :w<CR>
 nnoremap <Leader>wq :wq<CR>
+
 nnoremap <Leader>t :terminal<CR>
+nnoremap <Leader>ht :split<CR><C-w>j:terminal<CR>
+nnoremap <Leader>vt :vsplit<CR><C-w>l:terminal<CR>
+
+nnoremap <Leader>wh <C-w>h
+nnoremap <Leader>wj <C-w>j
+nnoremap <Leader>wk <C-w>k
+nnoremap <Leader>wl <C-w>l
 
 "coc
 
