@@ -1,5 +1,6 @@
 if has('win32')
-    let g:python3_host_prog=expand('C:/Python37/python.exe')
+    let g:python3_host_prog=expand('C:/Python38/python.exe')
+    let g:node_host_prog=expand('C:/Users/iheyh/AppData/Local/nvs/node/13.2.0/x64/node_modules/neovim/bin/cli.js')
 else
     let g:python3_host_prog=substitute(system('which python3'),'\n','','')
 endif
