@@ -14,10 +14,7 @@ nnoremap <Leader>t :terminal<CR>
 nnoremap <Leader>ht :split<CR><C-w>j:terminal<CR>
 nnoremap <Leader>vt :vsplit<CR><C-w>l:terminal<CR>
 
-nnoremap <Leader>wh <C-w>h
-nnoremap <Leader>wj <C-w>j
-nnoremap <Leader>wk <C-w>k
-nnoremap <Leader>wl <C-w>l
+nnoremap <Leader>w <C-w>
 
 "coc
 
