@@ -1,1 +1,0 @@
-nnoremap <Enter> :!python %<Enter>

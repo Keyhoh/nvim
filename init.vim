@@ -1,35 +1,52 @@
-if has('win32')
-    let g:python3_host_prog=expand('C:/Python38/python.exe')
-    let g:node_host_prog=expand('C:/Users/iheyh/AppData/Local/nvs/node/13.2.0/x64/node_modules/neovim/bin/cli.js')
-else
-    let g:python3_host_prog=substitute(system('which python3'),'\n','','')
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
-let s:cache_home=empty($XDG_CACHE_HOME)?expand('~/.cache'):$XDG_CACHE_HOME
-let s:dein_dir=s:cache_home.'/dein'
+" Required:
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-let s:dein_repo_dir=s:dein_dir.'/repos/github.com/Shougo/dein.vim'
-if !isdirectory(s:dein_repo_dir)
-    call system('git clone https://github.com/Shoug/dein.vim '.shellescape(s:dein_repo_dir))
-endif
+" Required:
+call dein#begin('~/.cache/dein')
 
-let &runtimepath=s:dein_repo_dir.",".&runtimepath
+" Let dein manage dein
+" Required:
+call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-let s:toml_file=fnamemodify(expand('<sfile>'),':h').expand('/dein.toml')
-if dein#load_state(s:dein_dir)
-    call dein#begin(s:dein_dir)
-    call dein#load_toml(s:toml_file)
-    call dein#end()
-    call dein#save_state()
-endif
+" Add or remove your plugins here like this:
+"call dein#add('Shougo/neosnippet.vim')
+"call dein#add('Shougo/neosnippet-snippets')
+call dein#add('joshdick/onedark.vim')
+call dein#add('vim-airline/vim-airline')
 
-if has('vim_starting')&&dein#check_install()
-    call dein#install()
-endif
+" Required:
+call dein#end()
 
+" Required:
 filetype plugin indent on
 syntax enable
 
-runtime! options.rc.vim
-runtime! keymap.rc.vim
-runtime! filetype.rc.vim
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"End dein Scripts-------------------------
+
+let g:airline_powerline_fonts=1
+let g:netrw_liststyle=1
+let g:netrw_banner=0
+let g:netrw_sizestyle="H"
+let g:netrw_preview=1
+let g:netrw_alto=1
+
+set guifont=HackGenNerd
+set splitright
+set splitbelow
+
+syntax enable
+
+colorscheme onedark
+
+inoremap jj <Esc>
+nnoremap <S-y> y$
