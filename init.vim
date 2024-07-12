@@ -47,29 +47,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " User settings
-set guifont=HackGen_Nerd
-set splitbelow
-set splitright
-
-colorscheme onedark
-
-let mapleader=' '
-
-set number
-
-set expandtab
-set tabstop=4
-set shiftwidth=4
-
-set ignorecase
-set smartcase
-
-set mouse=
-set guioptions=
-
-set clipboard+=unnamedplus
-
-nnoremap <S-y> y$
-inoremap jj <Esc>
-nnoremap gb :<C-u>exe v:count."bnext"<CR>
-nnoremap g<S-b> :<C-u>exe v:count."bprevious"<CR>
+source ~/.config/nvim/keymap.vim
+source ~/.config/nvim/config.vim
