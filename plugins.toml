@@ -1,0 +1,36 @@
+[[plugins]]
+repo = 'https://github.com/Shougo/dpp.vim'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/dpp-ext-installer'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/dpp-ext-lazy'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/dpp-ext-toml'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/dpp-protocol-git'
+
+[[plugins]]
+repo = 'https://github.com/vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'https://github.com/joshdick/onedark.vim'
+
+[[plugins]]
+repo = 'https://github.com/vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'https://github.com/vim-airline/vim-airline-theme'
+
+[[plugins]]
+repo = 'https://github.com/github/copilot.vim'
+
+[[plugins]]
+repo = 'https://github.com/tpope/vim-surround'
+
+[[plugins]]
+repo = 'https://github.com/tpope/vim-commentary'
+
