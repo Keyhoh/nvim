@@ -18,3 +18,23 @@ call ddu#custom#patch_local('ff', #{
     \   }
     \ })
 
+call ddu#custom#patch_local('filer', #{
+    \   ui: 'filer',
+    \   uiParams: #{
+    \     filer: #{
+    \       split: 'floating',
+    \     }
+    \   },
+    \   sources: [#{name: 'file', params: {}}],
+    \   sourceOptions: #{
+    \     file: #{
+    \       columns: ['filename'],
+    \     },
+    \   },
+    \   kindOptions: #{
+    \     file: #{
+    \       defaultAction: 'open',
+    \     },
+    \   },
+    \ })
+

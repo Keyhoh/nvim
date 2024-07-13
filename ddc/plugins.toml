@@ -1,0 +1,18 @@
+[[plugins]]
+repo = 'https://github.com/Shougo/ddc.vim'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/pum.vim'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddc-ui-pum'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddc-around'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddc-matcher_head'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddc-sorter_rank'
+

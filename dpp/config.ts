@@ -19,7 +19,7 @@ type LazyMakeStateResult = {
 };
 
 const basePath = "~/.config/nvim";
-const PLUGINS: string[] = ["", "/dpp", "/ddu"];
+const PLUGINS: string[] = ["", "/dpp", "/ddu", "/ddc"];
 
 export class Config extends BaseConfig {
     override async config(args: {

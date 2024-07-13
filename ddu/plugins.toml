@@ -8,10 +8,16 @@ repo = 'https://github.com/Shougo/ddu-ui-filer'
 repo = 'https://github.com/Shougo/ddu-ui-ff'
 
 [[plugins]]
+repo = 'https://github.com/Shougo/ddu-source-file'
+
+[[plugins]]
 repo = 'https://github.com/Shougo/ddu-source-file_rec'
 
 [[plugins]]
 repo = 'https://github.com/Shougo/ddu-filter-matcher_substring'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddu-column-filename'
 
 [[plugins]]
 repo = 'https://github.com/Shougo/ddu-kind-file'
