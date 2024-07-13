@@ -1,10 +1,6 @@
-" Ward off unexpected things that your distro might have made, as
-" well as sanely reset options when re-sourcing .vimrc
-set nocompatible
-
 " Set dpp base path (required)
 const s:dpp_base = '~/.cache/dpp'
-const s:dpp_config = '~/.config/nvim/dpp.ts'
+const s:dpp_config = '~/.config/nvim/dpp/config.ts'
 
 " Set dpp source path (required)
 " NOTE: The plugins must be cloned before.
@@ -28,16 +24,16 @@ if s:dpp_base->dpp#min#load_state()
   execute 'set runtimepath^=' .. s:dpp_protocol_git
 
   autocmd User DenopsReady
-  \ : echohl WarningMsg
-  \ | echomsg 'dpp load_state() is failed'
-  \ | echohl NONE
-  \ | call dpp#make_state(s:dpp_base,s:dpp_config)
+    \ : echohl WarningMsg
+    \ | echomsg 'dpp load_state() is failed'
+    \ | echohl NONE
+    \ | call dpp#make_state(s:dpp_base, s:dpp_config)
 endif
 
 autocmd User Dpp:makeStatePost
-      \ : echohl WarningMsg
-      \ | echomsg 'dpp make_state() is done'
-      \ | echohl NONE
+  \ : echohl WarningMsg
+  \ | echomsg 'dpp make_state() is done'
+  \ | echohl NONE
 
 function DppInstallerInstall()
   call dpp#async_ext_action('installer', 'install')
@@ -47,13 +43,3 @@ function DppInstallerUpdate()
   call dpp#async_ext_action('installer', 'update')
 endfunction
 
-" Attempt to determine the type of a file based on its name and
-" possibly its " contents. Use this to allow intelligent
-" auto-indenting " for each filetype, and for plugins that are
-" filetype specific.
-filetype indent plugin on
-
-" Enable syntax highlighting
-if has('syntax')
-  syntax on
-endif

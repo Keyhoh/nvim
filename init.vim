@@ -5,6 +5,8 @@ if &compatible
   set nocompatible         " Be iMproved
 endif
 
-source ~/.config/nvim/dpp.vim
+source ~/.config/nvim/dpp/init.vim
+source ~/.config/nvim/ddu/init.vim
 source ~/.config/nvim/config.vim
 source ~/.config/nvim/keymap.vim
+

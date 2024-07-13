@@ -1,0 +1,18 @@
+[[plugins]]
+repo = 'https://github.com/Shougo/ddu.vim'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddu-ui-filer'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddu-ui-ff'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddu-source-file_rec'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddu-filter-matcher_substring'
+
+[[plugins]]
+repo = 'https://github.com/Shougo/ddu-kind-file'
+

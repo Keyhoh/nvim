@@ -19,8 +19,7 @@ type LazyMakeStateResult = {
 };
 
 const basePath = "~/.config/nvim";
-const TOML_PLUGINS: string[] = [`${basePath}/plugins.toml`];
-const LAZY_TOML_PLUGINS: string[] = [];
+const PLUGINS: string[] = ["", "/dpp", "/ddu"];
 
 export class Config extends BaseConfig {
     override async config(args: {
@@ -45,7 +44,9 @@ export class Config extends BaseConfig {
                     {
                         path: await fn.expand(
                             args.denops,
-                            path,
+                            `${basePath}${path}/${
+                                lazy ? "lazyPlugins" : "plugins"
+                            }.toml`,
                         ),
                         options: {
                             lazy,
@@ -54,8 +55,8 @@ export class Config extends BaseConfig {
                 ) as Toml
             ));
 
-        const tomlPlugins = await load(TOML_PLUGINS, false);
-        const lazyTomlPlugins = await load(LAZY_TOML_PLUGINS, true);
+        const tomlPlugins: Toml[] = await load(PLUGINS, false);
+        const lazyTomlPlugins: Toml[] = []; // await load(PLUGINS, true);
 
         const { plugins, ftplugins, hooksFiles } = [
             ...tomlPlugins,
@@ -66,16 +67,13 @@ export class Config extends BaseConfig {
                     prev.plugins.push(...curr.plugins);
                 }
                 if (curr.ftplugins) {
-                    for (const filetype of Object.keys(curr.ftplugins)) {
-                        if (prev.ftplugins![filetype]) {
-                            prev.ftplugins![filetype] += `\n${
-                                curr.ftplugins[filetype]
-                            }`;
+                    Object.entries(curr.ftplugins).forEach(([key, value]) => {
+                        if (prev.ftplugins![key]) {
+                            prev.ftplugins![key] += `\n${value}`;
                         } else {
-                            prev.ftplugins![filetype] =
-                                curr.ftplugins[filetype];
+                            prev.ftplugins![key] = value;
                         }
-                    }
+                    })
                 }
                 if (curr.hooks_file) {
                     prev.hooksFiles!.push(curr.hooks_file);
@@ -107,3 +105,4 @@ export class Config extends BaseConfig {
         };
     }
 }
+

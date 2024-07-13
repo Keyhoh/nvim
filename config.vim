@@ -1,10 +1,11 @@
+filetype indent plugin on
+syntax on
+
+let mapleader=' '
+
 set guifont=HackGen_Nerd
 set splitbelow
 set splitright
-
-colorscheme onedark
-
-let mapleader=' '
 
 set number
 
@@ -18,4 +19,7 @@ set smartcase
 set mouse=
 set guioptions=
 
-set clipboard+=unnamedplus
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
