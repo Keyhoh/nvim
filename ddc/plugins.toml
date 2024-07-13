@@ -11,6 +11,12 @@ repo = 'https://github.com/Shougo/ddc-ui-pum'
 repo = 'https://github.com/Shougo/ddc-around'
 
 [[plugins]]
+repo = 'https://github.com/Shougo/ddc-source-lsp'
+
+[[plugins]]
+repo = 'https://github.com/neovim/nvim-lspconfig'
+
+[[plugins]]
 repo = 'https://github.com/Shougo/ddc-matcher_head'
 
 [[plugins]]
