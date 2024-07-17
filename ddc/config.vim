@@ -7,13 +7,14 @@ EOF
 
 call ddc#custom#patch_global(#{
     \   ui: 'pum',
-    \   sources: ['lsp', 'around'],
+    \   sources: ['lsp', 'around', 'file'],
     \   sourceOptions: #{
     \     lsp: #{
     \       mark: 'LSP',
     \       forceCompletionPattern: '\.\w*|:\w*|->\w*',
     \     },
     \     around: #{mark: 'A'},
+    \     file: #{mark: 'F'},
     \     _: #{
     \       matchers: ['matcher_head'],
     \       sorters: ['sorter_rank'],
