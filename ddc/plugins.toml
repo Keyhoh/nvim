@@ -11,6 +11,9 @@ repo = 'https://github.com/Shougo/ddc-ui-pum'
 repo = 'https://github.com/Shougo/ddc-around'
 
 [[plugins]]
+repo = 'https://github.com/LumaKernel/ddc-source-file'
+
+[[plugins]]
 repo = 'https://github.com/Shougo/ddc-source-lsp'
 
 [[plugins]]
