@@ -1,0 +1,2 @@
+colorscheme darcula
+

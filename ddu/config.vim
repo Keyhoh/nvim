@@ -15,7 +15,7 @@ call ddu#custom#patch_local('ff', #{
     \     file: #{
     \       defaultAction: 'open',
     \     },
-    \   }
+    \   },
     \ })
 
 call ddu#custom#patch_local('filer', #{
@@ -23,7 +23,7 @@ call ddu#custom#patch_local('filer', #{
     \   uiParams: #{
     \     filer: #{
     \       split: 'floating',
-    \     }
+    \     },
     \   },
     \   sources: [#{name: 'file', params: {}}],
     \   sourceOptions: #{

@@ -8,6 +8,12 @@ repo = 'https://github.com/joshdick/onedark.vim'
 repo = 'https://github.com/folke/tokyonight.nvim'
 
 [[plugins]]
+repo = 'https://github.com/doums/darcula'
+
+[[plugins]]
+repo = 'https://github.com/tomasiser/vim-code-dark'
+
+[[plugins]]
 repo = 'https://github.com/vim-airline/vim-airline'
 
 [[plugins]]
