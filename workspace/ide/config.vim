@@ -7,10 +7,5 @@ call ddu#custom#patch_local('filer', #{
     \       winWidth: &columns / 8,
     \     },
     \   },
-    \   actionOptions: #{
-    \     open: #{
-    \       quit: v:false,
-    \     },
-    \   },
     \ })
 
