@@ -35,7 +35,7 @@ call ddc#custom#patch_filetype(['sql', 'mysql', 'plsql'], #{
     \   sources: ['dadbod-completion', 'around'],
     \   sourceOptions: #{
     \     around: #{mark: 'A'},
-    \     dadbod-completion: #{ mark: 'DB' },
+    \     dadbod-completion: #{mark: 'DB'},
     \     _: #{
     \       matchers: ['matcher_head'],
     \       sorters: ['sorter_rank'],
