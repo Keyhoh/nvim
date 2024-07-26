@@ -28,3 +28,12 @@ repo = 'https://github.com/tpope/vim-surround'
 [[plugins]]
 repo = 'https://github.com/tpope/vim-commentary'
 
+[[plugins]]
+repo = 'tpope/vim-dadbod'
+
+[[plugins]]
+repo = 'kristijanhusak/vim-dadbod-ui'
+
+[[plugins]]
+repo = 'kristijanhusak/vim-dadbod-completion'
+

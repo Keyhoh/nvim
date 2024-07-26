@@ -7,7 +7,7 @@
 
 call ddc#custom#patch_global(#{
     \   ui: 'pum',
-    \   sources: ['lsp', 'around', 'file'],
+    \   sources: ['lsp', 'file', 'around'],
     \   sourceOptions: #{
     \     lsp: #{
     \       mark: 'LSP',
@@ -27,6 +27,18 @@ call ddc#custom#patch_global(#{
     \       }),
     \       enableResolveItem: v:true,
     \       enableAdditionalTextEdit: v:true,
+    \     },
+    \   },
+    \ })
+
+call ddc#custom#patch_filetype(['sql', 'mysql', 'plsql'], #{
+    \   sources: ['dadbod-completion', 'around'],
+    \   sourceOptions: #{
+    \     around: #{mark: 'A'},
+    \     dadbod-completion: #{ mark: 'DB' },
+    \     _: #{
+    \       matchers: ['matcher_head'],
+    \       sorters: ['sorter_rank'],
     \     },
     \   },
     \ })
