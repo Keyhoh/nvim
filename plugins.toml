@@ -35,5 +35,5 @@ repo = 'tpope/vim-dadbod'
 repo = 'kristijanhusak/vim-dadbod-ui'
 
 [[plugins]]
-repo = 'kristijanhusak/vim-dadbod-completion'
+repo = 'Keyhoh/vim-dadbod-completion'
 
