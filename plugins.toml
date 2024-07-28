@@ -1,11 +1,23 @@
 [[plugins]]
-repo = 'https://github.com/vim-denops/denops.vim'
+repo = 'vim-denops/denops.vim'
 
 [[plugins]]
-repo = 'https://github.com/joshdick/onedark.vim'
+repo = 'joshdick/onedark.vim'
 
 [[plugins]]
-repo = 'https://github.com/folke/tokyonight.nvim'
+repo = 'folke/tokyonight.nvim'
+
+[[plugins]]
+repo = 'catppuccin/nvim'
+
+[[plugins]]
+repo = 'rebelot/kanagawa.nvim'
+
+[[plugins]]
+repo = 'ellisonleao/gruvbox.nvim'
+
+[[plugins]]
+repo = 'kepano/flexoki-neovim'
 
 [[plugins]]
 repo = 'doums/darcula'

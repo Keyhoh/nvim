@@ -1,2 +1,2 @@
-colorscheme darcula
+colorscheme kanagawa-dragon
 
