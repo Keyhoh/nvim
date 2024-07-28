@@ -1,27 +1,27 @@
 [[plugins]]
-repo = 'https://github.com/Shougo/ddc.vim'
+repo = 'Shougo/ddc.vim'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/pum.vim'
+repo = 'Shougo/pum.vim'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/ddc-ui-pum'
+repo = 'Shougo/ddc-ui-pum'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/ddc-around'
+repo = 'Shougo/ddc-around'
 
 [[plugins]]
-repo = 'https://github.com/LumaKernel/ddc-source-file'
+repo = 'LumaKernel/ddc-source-file'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/ddc-source-lsp'
+repo = 'Shougo/ddc-source-lsp'
 
 [[plugins]]
-repo = 'https://github.com/neovim/nvim-lspconfig'
+repo = 'neovim/nvim-lspconfig'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/ddc-matcher_head'
+repo = 'Shougo/ddc-matcher_head'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/ddc-sorter_rank'
+repo = 'Shougo/ddc-sorter_rank'
 

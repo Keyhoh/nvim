@@ -1,15 +1,15 @@
 [[plugins]]
-repo = 'https://github.com/Shougo/dpp.vim'
+repo = 'Shougo/dpp.vim'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/dpp-ext-installer'
+repo = 'Shougo/dpp-ext-installer'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/dpp-ext-lazy'
+repo = 'Shougo/dpp-ext-lazy'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/dpp-ext-toml'
+repo = 'Shougo/dpp-ext-toml'
 
 [[plugins]]
-repo = 'https://github.com/Shougo/dpp-protocol-git'
+repo = 'Shougo/dpp-protocol-git'
 

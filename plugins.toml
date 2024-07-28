@@ -8,25 +8,25 @@ repo = 'https://github.com/joshdick/onedark.vim'
 repo = 'https://github.com/folke/tokyonight.nvim'
 
 [[plugins]]
-repo = 'https://github.com/doums/darcula'
+repo = 'doums/darcula'
 
 [[plugins]]
-repo = 'https://github.com/tomasiser/vim-code-dark'
+repo = 'tomasiser/vim-code-dark'
 
 [[plugins]]
-repo = 'https://github.com/vim-airline/vim-airline'
+repo = 'vim-airline/vim-airline'
 
 [[plugins]]
-repo = 'https://github.com/vim-airline/vim-airline-themes'
+repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
-repo = 'https://github.com/github/copilot.vim'
+repo = 'github/copilot.vim'
 
 [[plugins]]
-repo = 'https://github.com/tpope/vim-surround'
+repo = 'tpope/vim-surround'
 
 [[plugins]]
-repo = 'https://github.com/tpope/vim-commentary'
+repo = 'tpope/vim-commentary'
 
 [[plugins]]
 repo = 'tpope/vim-dadbod'
@@ -35,5 +35,5 @@ repo = 'tpope/vim-dadbod'
 repo = 'kristijanhusak/vim-dadbod-ui'
 
 [[plugins]]
-repo = 'Keyhoh/vim-dadbod-completion'
+repo = 'kristijanhusak/vim-dadbod-completion'
 
