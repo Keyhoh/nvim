@@ -35,6 +35,10 @@ autocmd User Dpp:makeStatePost
   \ | echomsg 'dpp make_state() is done'
   \ | echohl NONE
 
+function DppMakeState()
+  call dpp#make_state()
+endfunction
+
 function DppInstallerInstall()
   call dpp#async_ext_action('installer', 'install')
 endfunction
