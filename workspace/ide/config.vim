@@ -9,5 +9,5 @@ if !filereadable(s:tag_file)
     silent! execute s:ctags_command
 endif
 
-set tags=./.nvim/tags
+set tags=.nvim/tags
 
