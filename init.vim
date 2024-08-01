@@ -1,8 +1,8 @@
 let g:python3_host_prog='/usr/bin/python3'
 set encoding=utf-8
 
-if isdirectory(".nvim") && filereadable(".nvim/mode.vim")
-    source .nvim/mode.vim
+if isdirectory(".nvim") && filereadable(".nvim/beforeSetup.vim")
+    source .nvim/beforeSetup.vim
 endif
 
 source ~/.config/nvim/dpp/init.vim

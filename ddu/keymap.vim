@@ -19,7 +19,7 @@ function! s:ddu_filer_settings() abort
   nnoremap <buffer> o
         \ <Cmd>call ddu#ui#do_action('expandItem',
         \ #{mode: 'toggle'})<CR>
-  nnoremap <buffer> n
+  nnoremap <buffer> i
               \ <Cmd>call ddu#ui#do_action('itemAction',
         \ #{name:'newFile'})<CR>
   nnoremap <buffer> d
