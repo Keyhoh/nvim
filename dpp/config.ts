@@ -4,8 +4,8 @@ import {
     ContextBuilder,
     Dpp,
     Plugin,
-} from "https://deno.land/x/dpp_vim@v0.3.0/types.ts";
-import { Denops, fn } from "https://deno.land/x/dpp_vim@v0.3.0/deps.ts";
+} from 'https://deno.land/x/dpp_vim@v0.3.0/types.ts';
+import { Denops, fn } from 'https://deno.land/x/dpp_vim@v0.3.0/deps.ts';
 
 type Toml = {
     hooks_file?: string;
@@ -18,8 +18,8 @@ type LazyMakeStateResult = {
     stateLines: string[];
 };
 
-const basePath = "~/.config/nvim";
-const PLUGINS: string[] = ["", "/dpp", "/ddu", "/ddc"];
+const basePath = '~/.config/nvim';
+const PLUGINS: string[] = ['', '/dpp', '/ddu', '/ddc'];
 
 export class Config extends BaseConfig {
     override async config(args: {
@@ -29,7 +29,7 @@ export class Config extends BaseConfig {
         dpp: Dpp;
     }) {
         args.contextBuilder.setGlobal({
-            protocols: ["git"],
+            protocols: ['git'],
         });
 
         const [context, options] = await args.contextBuilder.get(args.denops);
@@ -39,13 +39,13 @@ export class Config extends BaseConfig {
                     args.denops,
                     context,
                     options,
-                    "toml",
-                    "load",
+                    'toml',
+                    'load',
                     {
                         path: await fn.expand(
                             args.denops,
                             `${basePath}${path}/${
-                                lazy ? "lazyPlugins" : "plugins"
+                                lazy ? 'lazyPlugins' : 'plugins'
                             }.toml`,
                         ),
                         options: {
@@ -89,8 +89,8 @@ export class Config extends BaseConfig {
             args.denops,
             context,
             options,
-            "lazy",
-            "makeState",
+            'lazy',
+            'makeState',
             {
                 plugins,
             },

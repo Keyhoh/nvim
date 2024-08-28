@@ -6,6 +6,8 @@ function! s:ddu_ff_settings() abort
         \ <Cmd>call ddu#ui#do_action('toggleSelectItem')<CR>
   nnoremap <buffer><silent> i
         \ <Cmd>call ddu#ui#do_action('openFilterWindow')<CR>
+  nnoremap <buffer><silent> p
+        \ <Cmd>call ddu#ui#do_action('preview')<CR>
   nnoremap <buffer><silent> q
         \ <Cmd>call ddu#ui#do_action('quit')<CR>
 endfunction
@@ -20,13 +22,13 @@ function! s:ddu_filer_settings() abort
         \ <Cmd>call ddu#ui#do_action('expandItem',
         \ #{mode: 'toggle'})<CR>
   nnoremap <buffer> i
-              \ <Cmd>call ddu#ui#do_action('itemAction',
+        \ <Cmd>call ddu#ui#do_action('itemAction',
         \ #{name:'newFile'})<CR>
   nnoremap <buffer> d
-              \ <Cmd>call ddu#ui#do_action('itemAction',
+        \ <Cmd>call ddu#ui#do_action('itemAction',
         \ #{name:'delete'})<CR>
   nnoremap <buffer> r
-              \ <Cmd>call ddu#ui#do_action('itemAction',
+        \ <Cmd>call ddu#ui#do_action('itemAction',
         \ #{name:'rename'})<CR>
   nnoremap <buffer><silent> q
         \ <Cmd>call ddu#ui#do_action('quit')<CR>
