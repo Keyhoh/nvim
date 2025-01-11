@@ -1,5 +1,5 @@
 nnoremap <S-y> y$
-inoremap jj <Esc>
+inoremap jk <Esc>
 nnoremap gb <Cmd>exe v:count.'bnext'<CR>
 nnoremap g<S-b> <Cmd>exe v:count.'bprevious'<CR>
 nnoremap g<S-d> g]
