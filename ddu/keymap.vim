@@ -14,8 +14,11 @@ endfunction
 
 autocmd FileType ddu-filer call s:ddu_filer_settings()
 function! s:ddu_filer_settings() abort
-  nnoremap <buffer><silent> <CR>
-        \ <Cmd>call ddu#ui#do_action('itemAction')<CR>
+  nnoremap <buffer> .. <Cmd>cd .. <Bar>call ddu#ui#do_action('quit')<CR>
+  nnoremap <buffer><expr> <CR>
+        \ ddu#ui#get_item()->get('isTree', v:false) ?
+        \ "<Cmd>call ddu#ui#do_action('itemAction', #{name: 'open', params: #{command: 'cd'}})<CR>" :
+        \ "<Cmd>call ddu#ui#do_action('itemAction')<CR>"
   nnoremap <buffer><silent> <Space>
         \ <Cmd>call ddu#ui#do_action('toggleSelectItem')<CR>
   nnoremap <buffer> o
