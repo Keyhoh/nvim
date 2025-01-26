@@ -25,7 +25,7 @@ function! s:ddu_filer_settings() abort
         \ <Cmd>call ddu#ui#do_action('itemAction',
         \ #{name:'newFile'})<CR>
   nnoremap <buffer><silent> p
-        \ <Cmd>call ddu#ui#do_action('preview')<CR>
+        \ <Cmd>call ddu#ui#do_action('preview', #{command: 'drop'})<CR>
   nnoremap <buffer> d
         \ <Cmd>call ddu#ui#do_action('itemAction',
         \ #{name:'delete'})<CR>
