@@ -11,6 +11,7 @@ nnoremap <silent> <Leader><Leader>r <Cmd>call GenerateTags()<CR><CR>
 nnoremap <Leader>e <Cmd>call ddu#start(#{name: 'filer', resume: v:true})<CR>
 nnoremap <Leader>f <Cmd>call ddu#start(#{name: 'ff'})<CR>
 nnoremap <Leader><S-f> <Cmd>call ddu#start(#{name: 'rg'})<CR>
+nnoremap <Leader>t <Cmd>call ddt#start(#{name: 'terminal'})<CR>
 
 nnoremap <Leader>c <Cmd>Copilot panel<CR>
 
