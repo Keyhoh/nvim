@@ -12,5 +12,3 @@ source ~/.config/nvim/ddt/init.vim
 source ~/.config/nvim/config.vim
 source ~/.config/nvim/keymap.vim
 
-source ~/.config/nvim/workspace/init.vim
-
