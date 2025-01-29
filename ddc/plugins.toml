@@ -17,9 +17,6 @@ repo = 'LumaKernel/ddc-source-file'
 repo = 'Shougo/ddc-source-lsp'
 
 [[plugins]]
-repo = 'neovim/nvim-lspconfig'
-
-[[plugins]]
 repo = 'Shougo/ddc-matcher_head'
 
 [[plugins]]
