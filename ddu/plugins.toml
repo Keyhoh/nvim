@@ -17,6 +17,9 @@ repo = 'Shougo/ddu-source-file_rec'
 repo = 'shun/ddu-source-rg'
 
 [[plugins]]
+repo = 'uga-rosa/ddu-source-lsp'
+
+[[plugins]]
 repo = 'Shougo/ddu-filter-matcher_substring'
 
 [[plugins]]

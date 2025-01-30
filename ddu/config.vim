@@ -1,12 +1,10 @@
-call ddu#custom#patch_local('rg', #{
-    \   ui: 'ff',
+call ddu#custom#patch_global(#{
     \   uiParams: #{
     \     ff: #{
     \       autoAction: #{
     \         name: 'preview',
     \       },
     \       floatingBorder: 'single',
-    \       floatingTitle: 'Fuzzy Finder',
     \       sort: 'filename',
     \       sortTreesFirst: v:true,
     \       split: 'floating',
@@ -22,6 +20,26 @@ call ddu#custom#patch_local('rg', #{
     \       previewWidth: '&columns / 2 - 2',
     \       previewRow: 1,
     \       previewCol: '&columns / 2 + 1',
+    \     },
+    \   },
+    \   kindOptions: #{
+    \     file: #{
+    \       defaultAction: 'open',
+    \     },
+    \     lsp: #{
+    \       defaultAction: 'open',
+    \     },
+    \     lsp_codeAction: #{
+    \       defaultAction: 'apply',
+    \     },
+    \   },
+    \ })
+
+call ddu#custom#patch_local('rg', #{
+    \   ui: 'ff',
+    \   uiParams: #{
+    \     ff: #{
+    \       floatingTitle: 'Fuzzy Finder',
     \     },
     \   },
     \   sources: [#{name: 'rg', params: {}}],
@@ -36,37 +54,13 @@ call ddu#custom#patch_local('rg', #{
     \       args: ['--json'],
     \     },
     \   },
-    \   kindOptions: #{
-    \     file: #{
-    \       defaultAction: 'open',
-    \     },
-    \   },
     \ })
 
 call ddu#custom#patch_local('ff', #{
     \   ui: 'ff',
     \   uiParams: #{
     \     ff: #{
-    \       autoAction: #{
-    \         name: 'preview',
-    \       },
-    \       floatingBorder: 'single',
     \       floatingTitle: 'Finder',
-    \       sort: 'filename',
-    \       sortTreesFirst: v:true,
-    \       split: 'floating',
-    \       startAutoAction: v:true,
-    \       winHeight: '&lines - 4',
-    \       winWidth: '&columns / 2 - 2',
-    \       winRow: 0,
-    \       winCol: 0,
-    \       previewFloating: v:true,
-    \       previewFloatingBorder: 'single',
-    \       previewFloatingTitle: 'Preview',
-    \       previewHeight: '&lines - 4',
-    \       previewWidth: '&columns / 2 - 2',
-    \       previewRow: 1,
-    \       previewCol: '&columns / 2 + 1',
     \     },
     \   },
     \   sources: [#{name: 'file_rec', params: #{ignoredDirectories: get(g:, 'ignored_directories', [])}}],
@@ -75,11 +69,64 @@ call ddu#custom#patch_local('ff', #{
     \       matchers: ['matcher_substring'],
     \     },
     \   },
-    \   kindOptions: #{
-    \     file: #{
-    \       defaultAction: 'open',
+    \ })
+
+call ddu#custom#patch_local('def', #{
+    \   ui: 'ff',
+    \   uiParams: #{
+    \     ff: #{
+    \       floatingTitle: 'Definition',
+    \       immediateAction: 'open',
     \     },
     \   },
+    \   sources: [#{name: 'lsp_definition'}],
+    \   sync: v:true,
+    \ })
+
+call ddu#custom#patch_local('impl', #{
+    \   ui: 'ff',
+    \   uiParams: #{
+    \     ff: #{
+    \       floatingTitle: 'Definition',
+    \       immediateAction: 'open',
+    \     },
+    \   },
+    \   sources: [#{name: 'lsp_definition', params: #{method: 'textDocument/implementation'}}],
+    \   sync: v:true,
+    \ })
+
+call ddu#custom#patch_local('ref', #{
+    \   ui: 'ff',
+    \   uiParams: #{
+    \     ff: #{
+    \       floatingTitle: 'References',
+    \       immediateAction: 'open',
+    \     },
+    \   },
+    \   sources: [#{name: 'lsp_references'}],
+    \   sync: v:true,
+    \ })
+
+call ddu#custom#patch_local('callHier', #{
+    \   ui: 'ff',
+    \   uiParams: #{
+    \     ff: #{
+    \       displayTree: v:true,
+    \       floatingTitle: 'Call hierarchy',
+    \     },
+    \   },
+    \   sources: [#{name: 'lsp_callHierarchy'}],
+    \ })
+
+call ddu#custom#patch_local('typeHier', #{
+    \   ui: 'ff',
+    \   uiParams: #{
+    \     ff: #{
+    \       displayTree: v:true,
+    \       floatingTitle: 'Type hierarchy',
+    \     },
+    \   },
+    \   sources: [#{name: 'lsp_typeHierarchy'}],
     \ })
 
 call ddu#custom#patch_local('filer', #{
@@ -112,11 +159,6 @@ call ddu#custom#patch_local('filer', #{
     \   sourceOptions: #{
     \     file: #{
     \       columns: ['filename'],
-    \     },
-    \   },
-    \   kindOptions: #{
-    \     file: #{
-    \       defaultAction: 'open',
     \     },
     \   },
     \ })
