@@ -1,2 +1,2 @@
-colorscheme kanagawa-dragon
+colorscheme flexoki
 

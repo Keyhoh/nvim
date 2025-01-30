@@ -1,9 +1,14 @@
+# Basic plugins
 [[plugins]]
 repo = 'neovim/nvim-lspconfig'
 
 [[plugins]]
+repo = 'github/copilot.vim'
+
+[[plugins]]
 repo = 'vim-denops/denops.vim'
 
+# Colorschemes plugins
 [[plugins]]
 repo = 'joshdick/onedark.vim'
 
@@ -28,18 +33,21 @@ repo = 'doums/darcula'
 [[plugins]]
 repo = 'tomasiser/vim-code-dark'
 
+# UI plugins
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
+# Operations plugins
 [[plugins]]
 repo = 'tpope/vim-surround'
 
 [[plugins]]
 repo = 'tpope/vim-commentary'
 
+# Extensions plugins
 [[plugins]]
 repo = 'tpope/vim-dadbod'
 
