@@ -1,2 +1,2 @@
-colorscheme tokyonight-night
+colorscheme carbonfox
 

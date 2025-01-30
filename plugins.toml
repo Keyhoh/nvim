@@ -10,25 +10,28 @@ repo = 'vim-denops/denops.vim'
 
 # Colorschemes plugins
 [[plugins]]
-repo = 'joshdick/onedark.vim'
-
-[[plugins]]
-repo = 'folke/tokyonight.nvim'
-
-[[plugins]]
 repo = 'catppuccin/nvim'
 
 [[plugins]]
-repo = 'rebelot/kanagawa.nvim'
+repo = 'doums/darcula'
+
+[[plugins]]
+repo = 'EdenEast/nightfox.nvim'
 
 [[plugins]]
 repo = 'ellisonleao/gruvbox.nvim'
 
 [[plugins]]
+repo = 'folke/tokyonight.nvim'
+
+[[plugins]]
+repo = 'joshdick/onedark.vim'
+
+[[plugins]]
 repo = 'kepano/flexoki-neovim'
 
 [[plugins]]
-repo = 'doums/darcula'
+repo = 'rebelot/kanagawa.nvim'
 
 [[plugins]]
 repo = 'tomasiser/vim-code-dark'
