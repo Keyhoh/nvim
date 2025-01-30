@@ -12,7 +12,7 @@ source ~/.config/nvim/ddt/init.vim
 source ~/.config/nvim/config.vim
 source ~/.config/nvim/keymap.vim
 
-if isdirectory('.nvim') && filereadable('.nvim/init.vim')
+if isdirectory('.nvim') && filereadable('.nvim/afterInit.vim')
     source .nvim/afterInit.vim
 endif
 

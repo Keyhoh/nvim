@@ -1,2 +1,2 @@
-colorscheme flexoki
+colorscheme flexoki-dark
 
