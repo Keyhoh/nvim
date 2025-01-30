@@ -1,2 +1,2 @@
-colorscheme flexoki-dark
+colorscheme tokyonight-night
 
