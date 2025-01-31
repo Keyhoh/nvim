@@ -46,7 +46,9 @@ call ddu#custom#patch_local('rg', #{
     \       floatingTitle: 'Fuzzy Finder',
     \     },
     \   },
-    \   sources: [#{name: 'rg', params: {}}],
+    \   sources: [#{
+    \     name: 'rg',
+    \   }],
     \   sourceOptions: #{
     \     rg: #{
     \       matchers: ['matcher_substring'],
@@ -67,7 +69,12 @@ call ddu#custom#patch_local('ff', #{
     \       floatingTitle: 'Finder',
     \     },
     \   },
-    \   sources: [#{name: 'file_rec', params: #{ignoredDirectories: get(g:, 'ignored_directories', [])}}],
+    \   sources: [#{
+    \     name: 'file_rec',
+    \     params: #{
+    \       ignoredDirectories: get(g:, 'ignored_directories', []),
+    \     },
+    \   }],
     \   sourceOptions: #{
     \     file_rec: #{
     \       matchers: ['matcher_substring'],
@@ -83,7 +90,9 @@ call ddu#custom#patch_local('def', #{
     \       immediateAction: 'open',
     \     },
     \   },
-    \   sources: [#{name: 'lsp_definition'}],
+    \   sources: [#{
+    \     name: 'lsp_definition'
+    \   }],
     \   sourceOptions: #{
     \     lsp_definition: #{
     \       matchers: ['matcher_substring'],
@@ -100,7 +109,12 @@ call ddu#custom#patch_local('impl', #{
     \       immediateAction: 'open',
     \     },
     \   },
-    \   sources: [#{name: 'lsp_definition', params: #{method: 'textDocument/implementation'}}],
+    \   sources: [#{
+    \     name: 'lsp_definition',
+    \     params: #{
+    \       method: 'textDocument/implementation',
+    \     },
+    \   }],
     \   sourceOptions: #{
     \     lsp_definition: #{
     \       matchers: ['matcher_substring'],
@@ -117,7 +131,9 @@ call ddu#custom#patch_local('ref', #{
     \       immediateAction: 'open',
     \     },
     \   },
-    \   sources: [#{name: 'lsp_references'}],
+    \   sources: [#{
+    \     name: 'lsp_references',
+    \   }],
     \   sourceOptions: #{
     \     lsp_references: #{
     \       matchers: ['matcher_substring'],
@@ -134,7 +150,9 @@ call ddu#custom#patch_local('callHier', #{
     \       floatingTitle: 'Call hierarchy',
     \     },
     \   },
-    \   sources: [#{name: 'lsp_callHierarchy'}],
+    \   sources: [#{
+    \     name: 'lsp_callHierarchy',
+    \   }],
     \ })
 
 call ddu#custom#patch_local('typeHier', #{
@@ -145,7 +163,9 @@ call ddu#custom#patch_local('typeHier', #{
     \       floatingTitle: 'Type hierarchy',
     \     },
     \   },
-    \   sources: [#{name: 'lsp_typeHierarchy'}],
+    \   sources: [#{
+    \     name: 'lsp_typeHierarchy',
+    \   }],
     \ })
 
 call ddu#custom#patch_local('filer', #{
@@ -174,7 +194,9 @@ call ddu#custom#patch_local('filer', #{
     \       previewCol: '&columns / 2 + 1',
     \     },
     \   },
-    \   sources: [#{name: 'file', params: {}}],
+    \   sources: [#{
+    \     name: 'file',
+    \   }],
     \   sourceOptions: #{
     \     file: #{
     \       columns: ['filename'],
