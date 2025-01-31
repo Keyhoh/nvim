@@ -199,7 +199,7 @@ call ddu#custom#patch_local('filer', #{
     \   }],
     \   sourceOptions: #{
     \     file: #{
-    \       columns: ['filename'],
+    \       columns: ['icon_filename'],
     \     },
     \   },
     \ })
