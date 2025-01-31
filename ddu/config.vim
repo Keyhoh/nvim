@@ -22,6 +22,10 @@ call ddu#custom#patch_global(#{
     \       previewCol: '&columns / 2 + 1',
     \     },
     \   },
+    \   sourceOptions: #{
+    \     smartCase: v:true,
+    \     ignoreCase: v:true,
+    \   },
     \   kindOptions: #{
     \     file: #{
     \       defaultAction: 'open',
@@ -80,6 +84,11 @@ call ddu#custom#patch_local('def', #{
     \     },
     \   },
     \   sources: [#{name: 'lsp_definition'}],
+    \   sourceOptions: #{
+    \     lsp_definition: #{
+    \       matchers: ['matcher_substring'],
+    \     },
+    \   },
     \   sync: v:true,
     \ })
 
@@ -92,6 +101,11 @@ call ddu#custom#patch_local('impl', #{
     \     },
     \   },
     \   sources: [#{name: 'lsp_definition', params: #{method: 'textDocument/implementation'}}],
+    \   sourceOptions: #{
+    \     lsp_definition: #{
+    \       matchers: ['matcher_substring'],
+    \     },
+    \   },
     \   sync: v:true,
     \ })
 
@@ -104,6 +118,11 @@ call ddu#custom#patch_local('ref', #{
     \     },
     \   },
     \   sources: [#{name: 'lsp_references'}],
+    \   sourceOptions: #{
+    \     lsp_references: #{
+    \       matchers: ['matcher_substring'],
+    \     },
+    \   },
     \   sync: v:true,
     \ })
 
