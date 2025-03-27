@@ -15,7 +15,7 @@ nnoremap <Leader>d <Cmd>call ddu#start(#{name: 'def'})<CR>
 nnoremap <Leader>i <Cmd>call ddu#start(#{name: 'impl'})<CR>
 nnoremap <Leader>hc <Cmd>call ddu#start(#{name: 'callHier'})<CR>
 nnoremap <Leader>ht <Cmd>call ddu#start(#{name: 'typeHier'})<CR>
-nnoremap <Leader>t <Cmd>call ddt#start(#{name: 'terminal'})<CR>
+" nnoremap <Leader>t <Cmd>call ddt#start(#{name: 'terminal'})<CR>
 
 nnoremap <Leader>c <Cmd>Copilot panel<CR>
 

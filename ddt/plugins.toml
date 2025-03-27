@@ -4,3 +4,6 @@ repo = 'Shougo/ddt.vim'
 [[plugins]]
 repo = 'Shougo/ddt-ui-terminal'
 
+[[plugins]]
+repo = 'Shougo/ddt-ui-shell'
+
