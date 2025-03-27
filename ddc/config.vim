@@ -1,8 +1,10 @@
 call ddc#custom#patch_global(#{
     \   ui: 'pum',
+    \   autoCompleteEvents: ['InsertEnter', 'TextChangedI', 'TeextChangedP'],
     \   sources: ['lsp', 'file', 'around'],
     \   sourceOptions: #{
     \     lsp: #{
+    \       dup: 'keep',
     \       mark: 'LSP',
     \       forceCompletionPattern: '\.\w*|:\w*|->\w*',
     \     },
@@ -20,6 +22,7 @@ call ddc#custom#patch_global(#{
     \       }),
     \       enableResolveItem: v:true,
     \       enableAdditionalTextEdit: v:true,
+    \       confirmBehavior: 'replace',
     \     },
     \   },
     \ })

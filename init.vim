@@ -8,7 +8,7 @@ endif
 source ~/.config/nvim/dpp/init.vim
 source ~/.config/nvim/ddu/init.vim
 source ~/.config/nvim/ddc/init.vim
-source ~/.config/nvim/ddt/init.vim
+" source ~/.config/nvim/ddt/init.vim
 source ~/.config/nvim/config.vim
 source ~/.config/nvim/keymap.vim
 
