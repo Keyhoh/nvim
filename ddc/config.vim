@@ -5,8 +5,9 @@ call ddc#custom#patch_global(#{
     \   sourceOptions: #{
     \     lsp: #{
     \       dup: 'keep',
+    \       keywordPattern: '\k+',
     \       mark: 'LSP',
-    \       forceCompletionPattern: '\.\w*|:\w*|->\w*',
+    \       sorters: ['sorter_lsp-kind'],
     \     },
     \     around: #{mark: 'A'},
     \     file: #{mark: 'F'},
