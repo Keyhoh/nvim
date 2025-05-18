@@ -23,7 +23,7 @@ repo = 'uga-rosa/ddu-source-lsp'
 repo = 'Shougo/ddu-filter-matcher_substring'
 
 [[plugins]]
-repo = 'ryota2357/ddu-column-icon_filename'
+repo = 'keyhoh/ddu-column-icon_filename'
 
 [[plugins]]
 repo = 'Shougo/ddu-kind-file'
