@@ -7,7 +7,7 @@ call ddc#custom#patch_global(#{
     \       dup: 'keep',
     \       keywordPattern: '\k+',
     \       mark: 'LSP',
-    \       sorters: ['sorter_lsp-kind'],
+    \       sorters: ['sorter_lsp_kind'],
     \     },
     \     around: #{mark: 'A'},
     \     file: #{mark: 'F'},

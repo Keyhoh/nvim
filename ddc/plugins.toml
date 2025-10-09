@@ -26,4 +26,7 @@ repo = 'Shougo/ddc-matcher_head'
 repo = 'Shougo/ddc-sorter_rank'
 
 [[plugins]]
+repo = 'Shougo/ddc-filter-sorter_lsp_kind'
+
+[[plugins]]
 repo = 'hrsh7th/vim-vsnip'
