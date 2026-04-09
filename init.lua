@@ -20,16 +20,21 @@ vim.pack.add({
   { src = 'https://github.com/NeogitOrg/neogit' },
 })
 
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
-vim.keymap.set('n', '<Leader>e', '<Cmd>NvimTreeFocus<CR>')
-vim.keymap.set('n', '<Leader>ff', '<Cmd>Telescope find_files<CR>')
-vim.keymap.set('n', '<Leader>fg', '<Cmd>Telescope live_grep<CR>')
-vim.keymap.set('n', '<Leader>fb', '<Cmd>Telescope buffers<CR>')
-vim.keymap.set('n', '<Leader>fh', '<Cmd>Telescope help_tags<CR>')
+local nvimtree = require('nvim-tree.api')
+local telescope = require('telescope.builtin')
+local neogit = require('neogit')
 
 require('nvim-tree').setup()
 require('lualine').setup()
-require('neogit').setup()
+neogit.setup({ kind = 'floating' })
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+vim.keymap.set('n', '<Leader>e', nvimtree.tree.open)
+vim.keymap.set('n', '<Leader>ff', telescope.find_files)
+vim.keymap.set('n', '<Leader>fg', telescope.live_grep)
+vim.keymap.set('n', '<Leader>fb', telescope.buffers)
+vim.keymap.set('n', '<Leader>fh', telescope.help_tags)
+vim.keymap.set('n', '<Leader>gg', neogit.open)
 
