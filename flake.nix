@@ -15,6 +15,8 @@
       {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
+            nodejs_24
+            neovim
             lua-language-server
             vim-language-server
           ];
