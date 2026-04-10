@@ -11,6 +11,7 @@ vim.keymap.set('n', '<S-y>', 'y$')
 vim.keymap.set('i', 'jj', '<Esc>')
 
 vim.pack.add({
+  { src = 'https://github.com/neovim/nvim-lspconfig' },
   { src = 'https://github.com/github/copilot.vim' },
   { src = 'https://github.com/nvim-tree/nvim-web-devicons' },
   { src = 'https://github.com/nvim-tree/nvim-tree.lua' },
@@ -18,6 +19,7 @@ vim.pack.add({
   { src = 'https://github.com/nvim-lua/plenary.nvim' },
   { src = 'https://github.com/nvim-lualine/lualine.nvim' },
   { src = 'https://github.com/NeogitOrg/neogit' },
+  { src = 'https://github.com/dracula/vim' },
 })
 
 local nvimtree = require('nvim-tree.api')
@@ -30,6 +32,7 @@ neogit.setup({ kind = 'floating' })
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+vim.cmd.colorscheme('dracula')
 
 vim.keymap.set('n', '<Leader>e', nvimtree.tree.open)
 vim.keymap.set('n', '<Leader>ff', telescope.find_files)
