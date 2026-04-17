@@ -41,3 +41,6 @@ vim.keymap.set('n', '<Leader>fb', telescope.buffers)
 vim.keymap.set('n', '<Leader>fh', telescope.help_tags)
 vim.keymap.set('n', '<Leader>gg', neogit.open)
 
+vim.keymap.set('n', 'gri', telescope.lsp_implementations)
+vim.keymap.set('n', 'grr', telescope.lsp_references)
+
