@@ -4,6 +4,7 @@ require('config.option')
 require('config.lualine')
 require('config.neogit')
 require('config.nvimtree')
+require('config.telescope')
 
 require('config.keymap')
 
